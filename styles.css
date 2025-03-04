@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('images/farm-background.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.hero button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.mission {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.product-details {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-details h2 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.order-form {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.order-form h2 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.about-us, .contact-us {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us h2, .contact-us h2 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Farm image style */
+.farm-image {
+    margin-top: 40px;
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* Star rating styles */
+.star-rating {
+    direction: rtl;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating input:hover ~ label {
+    color: #FFD700; /* Gold color for selected stars */
+}
+
+.star-rating label:hover ~ label {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.rating h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 1em;
+    margin-inline-start: 26em;
+    margin-inline-end: 5px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* Style for the rating label */
+.rating label {
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set the text color */
+    display: block; /* Ensure it displays as a block element */
+    margin-bottom: 0.5rem; /* Add some space below the label */
+    text-align: center; /* Center the label text */
+}
+
+/* Styles for About Us page image */
+.about-us .about-image {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 20px;
+}
+
+.about-us .about-image img {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add slight rounding to the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styles for the page title */
+.page-title {
+    text-align: center; /* Center the title text */
+    margin-top: 20px; /* Add space at the top */
+}
+
+.page-title h1 {
+    font-size: 2.5rem; /* Large font size for the main title */
+    color: #2c3e50; /* Dark color for the title */
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 1.2rem; /* Slightly smaller font for subtitle */
+    color: #34495e; /* Complementary color for subtitle */
+}
+
+/* Styles for login and signup forms */
+.login-form, .signup-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2, .signup-form h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.login-form form, .signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label, .signup-form label {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.login-form input, .signup-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-form input[type="submit"], .signup-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"]:hover, .signup-form input[type="submit"]:hover {
+    background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .product-list {
+        display: block;
+        text-align: center;
+    }
+
+    .product {
+        margin-bottom: 30px;
+    }
+
+    /* Adjust form fields for mobile */
+    form {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form input[type="password"],
+    form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+    }
+}
